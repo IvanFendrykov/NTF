@@ -25,22 +25,22 @@ document.addEventListener("DOMContentLoaded", () => {
   loadComponent("#footer", "./components/footer.html");
 
   const mainSections = [
-    "../components/sections/Trending.html",
-    "../components/sections/Creators.html",
-    "../components/sections/Categories.html",
-    "../components/sections/Discover.html",
-    "../components/sections/Mashrooms.html",
-    "../components/sections/HowWorks.html",
-    "../components/sections/Join.html",
+    "./components/sections/Trending.html",
+    "./components/sections/Creators.html",
+    "./components/sections/Categories.html",
+    "./components/sections/Discover.html",
+    "./components/sections/Mashrooms.html",
+    "./components/sections/HowWorks.html",
+    "./components/sections/Join.html",
   ];
   const marketMain = document.querySelector("#marketMain");
   if (marketMain) {
-    loadComponent("#marketHeader", "../components/marketHeader.html", "append");
-    loadComponent("#marketMain", "../components/market.html", "append");
+    loadComponent("#marketHeader", "./components/marketHeader.html", "append");
+    loadComponent("#marketMain", "./components/market.html", "append");
   }
   const singmain = document.querySelector("#singIn");
   if (singmain) {
-    loadComponent("#singIn", "../components/sections/Sing.html", "append");
+    loadComponent("#singIn", "./components/sections/Sing.html", "append");
   }
 
   mainSections.forEach((path) => {
