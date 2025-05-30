@@ -21,7 +21,7 @@ const loadComponent = async (selector, path, insert = "replace") => {
 const basePath = window.location.pathname.includes(
   "https://ivanfendrykov.github.io/NTF/"
 )
-  ? "https://ivanfendrykov.github.io/NTF"
+  ? "https://ivanfendrykov.github.io/NTF/"
   : "";
 document.addEventListener("DOMContentLoaded", () => {
   loadComponent("#nav", `${basePath}/components/nav.html`);
