@@ -18,29 +18,41 @@ const loadComponent = async (selector, path, insert = "replace") => {
     );
   }
 };
-
+const basePath = window.location.pathname.includes("/NTF/") ? "/NTF" : "";
 document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("#nav", "./components/nav.html");
-  loadComponent("#header", "./components/header.html");
-  loadComponent("#footer", "./components/footer.html");
+  loadComponent("#nav", "${basePath}/components/nav.html");
+  loadComponent("#header", "${basePath}/components/header.html");
+  loadComponent("#footer", "${basePath}/components/footer.html");
 
   const mainSections = [
-    "./components/sections/Trending.html",
-    "./components/sections/Creators.html",
-    "./components/sections/Categories.html",
-    "./components/sections/Discover.html",
-    "./components/sections/Mashrooms.html",
-    "./components/sections/HowWorks.html",
-    "./components/sections/Join.html",
+    "${basePath}/components/sections/Trending.html",
+    "${basePath}/components/sections/Creators.html",
+    "${basePath}/components/sections/Categories.html",
+    "${basePath}/components/sections/Discover.html",
+    "${basePath}/components/sections/Mashrooms.html",
+    "${basePath}/components/sections/HowWorks.html",
+    "${basePath}/components/sections/Join.html",
   ];
   const marketMain = document.querySelector("#marketMain");
   if (marketMain) {
-    loadComponent("#marketHeader", "./components/marketHeader.html", "append");
-    loadComponent("#marketMain", "./components/market.html", "append");
+    loadComponent(
+      "#marketHeader",
+      "${basePath}/components/marketHeader.html",
+      "append"
+    );
+    loadComponent(
+      "#marketMain",
+      "${basePath}/components/market.html",
+      "append"
+    );
   }
   const singmain = document.querySelector("#singIn");
   if (singmain) {
-    loadComponent("#singIn", "./components/sections/Sing.html", "append");
+    loadComponent(
+      "#singIn",
+      "${basePath}/components/sections/Sing.html",
+      "append"
+    );
   }
 
   mainSections.forEach((path) => {
