@@ -1,0 +1,99 @@
+.Mashrooms {
+  background: var(--clock-gradient), url("../../assets/images/ScreenMobile.png");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 30px 40px;
+  .Btn {
+    background-color: var(--whiteColor);
+    color: var(--bcPrimery);
+    font-weight: 600;
+    svg {
+      color: var(--violetColor);
+    }
+  }
+
+  .AvatarCard {
+    background-color: var(--bcSecondary);
+    padding: 10px 20px;
+    border-radius: var(--borRad);
+    width: fit-content;
+  }
+}
+.MashroomBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  h3 {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  span {
+    position: relative;
+    font-size: 12px;
+    color: var(--whiteColor);
+    z-index: 1;
+  }
+  .Timer {
+    position: relative;
+    padding: 30px;
+    border-radius: var(--borRad);
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: #3b3b3b80;
+      filter: blur(10px);
+    }
+
+    ul {
+      position: relative;
+      display: flex;
+      gap: 10px;
+      z-index: 1;
+      justify-content: space-evenly;
+    }
+  }
+}
+.MashroomCard {
+  display: grid;
+  gap: var(--margin);
+}
+@media (min-width: 768px) {
+  .Mashrooms {
+    background: var(--clock-gradient),
+      url("../../assets/images/ScreenTablet.png");
+    background-size: cover;
+    background-position: center;
+    padding: 360px 82px 60px;
+    .Btn {
+      width: fit-content;
+    }
+    .Timer {
+      align-self: flex-end;
+      height: fit-content;
+    }
+  }
+  .MashroomBox {
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 1280px) {
+  .Mashrooms {
+    background: var(--clock-gradient),
+      url("../../assets/images/ScreenDesktop.png");
+    background-size: cover;
+    background-position: center;
+    padding: 360px 115px 60px;
+    .Btn {
+      &:hover {
+        background-color: var(--bcSecondary);
+        color: var(--whiteColor);
+        outline: 2px solid var(--whiteColor);
+      }
+    }
+  }
+}

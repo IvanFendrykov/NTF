@@ -1,0 +1,128 @@
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  background-color: var(--bcSecondary);
+}
+.FooterList {
+  @include column;
+  gap: var(--margin);
+  color: var(--whiteColor);
+  border-bottom: 1px solid var(--labelText);
+  li {
+    @include column;
+
+    gap: 20px;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    h5 {
+      font-size: 22px;
+    }
+    p,
+    .textGrey {
+      color: var(--greyColor);
+    }
+  }
+  .Logo {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+.InputBox {
+  @include column;
+
+  gap: 12px;
+
+  input {
+    padding: 12px 20px;
+    background-color: var(--whiteColor);
+    color: var(--bcPrimery);
+    border-radius: 20px;
+    width: 100%;
+    text-align: left;
+  }
+  button {
+    @include flex-center;
+    color: var(--whiteColor);
+    gap: 12px;
+    padding: 12px 0px;
+    background-color: var(--violetColor);
+    border-radius: var(--borRad);
+    width: 100%;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.Margin {
+  margin-bottom: var(--margin);
+}
+.SvgCommunity {
+  display: flex;
+  gap: 10px;
+  li {
+    svg {
+      color: var(--labelText);
+    }
+  }
+}
+.TextPrivat {
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--greyColor);
+}
+@media (min-width: 768px) {
+  .InputBox {
+    width: 420px;
+    position: relative;
+    .FooterInput {
+      margin-right: auto;
+      width: auto;
+      padding: 19px 40px 19px 20px;
+    }
+    .BtnFooter {
+      position: absolute;
+      right: 0;
+      width: auto;
+      padding: 20px 50px;
+      transition: background 300ms;
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .FooterList {
+    display: grid;
+
+    grid-template-columns: 340px 220px auto;
+    padding: 0 30px;
+  }
+  .Item {
+    width: 250px;
+  }
+  .SvgCommunity {
+    margin-bottom: var(--margin);
+    li {
+      svg {
+        &:hover {
+          color: var(--violetColor);
+        }
+      }
+    }
+  }
+  .BtnFooter {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--bcSecondary);
+      outline: 2px solid var(--violetColor);
+    }
+  }
+}

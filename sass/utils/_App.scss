@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-family: Work Sans;
+  font-size: 16px; /* базовый размер шрифта */
+  scroll-behavior: smooth; /* плавный скролл по якорям */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: Work Sans;
+}
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+  background: inherit;
+}
+
+/* оптимизация изображений и медиа */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* оптимизация таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+svg {
+  color: var(--whiteColor);
+  width: 32px;
+  height: 32px;
+}
+/* делает весь интерфейс более живым — плавно реагирует на hover и focus */
+*,
+*::before,
+*::after {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.container {
+  color: var(--whiteColor);
+  margin: 0 auto;
+  padding: var(--paddingSection-mobile);
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 840px;
+    padding: var(--paddingSection-tablet);
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1366px;
+    padding: var(--paddingSection-desktop);
+  }
+}

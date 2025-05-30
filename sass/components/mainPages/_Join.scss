@@ -1,0 +1,100 @@
+.JoinBox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin);
+
+  line-height: 1.4;
+  h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.InputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  input {
+    padding: 12px 20px;
+    background-color: var(--whiteColor);
+    color: var(--bcPrimery);
+    border-radius: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-family: Work Sans;
+  }
+  button {
+    @include flex-center;
+    color: var(--whiteColor);
+    gap: 12px;
+    padding: 12px 0px;
+    background-color: var(--violetColor);
+    border-radius: var(--borRad);
+    width: 100%;
+    font-weight: 600;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .JoinBox {
+    border-radius: var(--borRad);
+    padding: 40px 30px;
+    background-color: var(--bcSecondary);
+    flex-direction: row;
+    img {
+      width: 300px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .JoinBox {
+    gap: 80px;
+    padding: 60px 60px;
+    img {
+      height: 310px;
+      flex-basis: 50%;
+    }
+    h4 {
+      line-height: 1.2;
+      font-size: 38px;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 22px;
+    }
+    .JoinCard {
+      flex-basis: 50%;
+      margin: auto 0;
+    }
+  }
+
+  .InputContainer {
+    width: 420px;
+    position: relative;
+    .JoinInput {
+      margin-right: auto;
+      width: auto;
+      padding: 19px 40px 19px 20px;
+    }
+    .BtnJoin {
+      position: absolute;
+      right: 0;
+      width: fit-content;
+      padding: 19px 40px;
+      transition: background 300ms;
+      &:hover {
+        background-color: var(--bcSecondary);
+        outline: 2px solid var(--violetColor);
+      }
+    }
+  }
+}

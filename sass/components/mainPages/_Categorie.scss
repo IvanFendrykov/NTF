@@ -1,0 +1,50 @@
+.ListBlur {
+  h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  ul {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    li {
+      border-radius: var(--borRad);
+      background-color: var(--bcSecondary);
+    }
+  }
+  p {
+    padding: 20px;
+  }
+  .BlurPosition {
+    position: relative;
+    overflow: hidden;
+    img {
+      &:first-child {
+        width: 100%;
+        filter: blur(2px);
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .ListBlur {
+    ul {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .BlurPosition {
+    img {
+      &:first-child {
+        width: 100%;
+      }
+    }
+  }
+}

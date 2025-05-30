@@ -1,0 +1,54 @@
+.TitleBox {
+  margin-bottom: 40px;
+  h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
+
+.TrendingCardList {
+  display: flex;
+  justify-content: center;
+  gap: var(--margin);
+}
+.PrimaryCard {
+  margin-bottom: 15px;
+}
+
+.TrendingImageList {
+  display: flex;
+  justify-content: space-between;
+  li {
+    width: 95px;
+    height: 95px;
+    background-color: var(--violetColor);
+    border-radius: var(--borRad);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-family: Space Mono;
+      font-weight: 700;
+    }
+  }
+}
+.TabletCard,
+.DesktopCard {
+  display: none;
+}
+@media (min-width: 768px) {
+  .PrimaryCard {
+    width: 330px;
+  }
+  .TabletCard {
+    display: block;
+  }
+}
+@media (min-width: 1280px) {
+  .DesktopCard {
+    display: block;
+  }
+}
+.Nopadding {
+  padding: 22px 0px 0px;
+}

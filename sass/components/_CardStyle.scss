@@ -1,0 +1,46 @@
+.HeaderCard {
+  background-color: var(--bcSecondary);
+  border-radius: 20px 20px 20px 20px;
+}
+.CardImage {
+  width: 100%;
+}
+.CardName {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  h5 {
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+.CardImage {
+  width: 100%;
+}
+.AvatarCard {
+  display: flex;
+  align-items: center;
+  font-family: Space Mono;
+  gap: 12px;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.AvatarPrice {
+  display: inline-flex;
+  justify-content: space-between;
+  div {
+    &:last-child {
+      text-align: right;
+    }
+    p {
+      &:first-child {
+        color: var(--labelText);
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

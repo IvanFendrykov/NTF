@@ -1,0 +1,46 @@
+.Marketplace {
+  line-height: 1.4;
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: var(--margin);
+  }
+  div {
+    position: relative;
+    input {
+      padding: 19px 20px;
+      width: 100%;
+      color: var(--greyColor);
+      border: 2px solid var(--bcSecondary);
+      border-radius: var(--borRad);
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      transform: translate(-50% -50%);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .Marketplace {
+    h1 {
+      font-size: 38px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .Marketplace {
+    h1 {
+      font-size: 51px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.withoutTop {
+  padding-top: 0;
+}
+.ListTitle {
+  display: flex;
+  border-top: 1px solid var(--bcSecondary);
+  li {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 19px;
+    &:first-child {
+      border-bottom: 2px solid var(--labelText);
+    }
+    &:last-child {
+      color: var(--labelText);
+    }
+    span {
+      font-weight: 600;
+      &:last-child {
+        opacity: 0;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .ListTitle {
+    li {
+      span {
+        &:last-child {
+          opacity: 1;
+          color: var(--whiteColor);
+          background-color: var(--labelText);
+          padding: 5px 10px;
+          border-radius: var(--borRad);
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
