@@ -828,7 +828,7 @@ nav {
   }
 }
 .Mashrooms {
-  background: var(--clock-gradient), url("../../assets/images/ScreenMobile.png");
+  background: var(--clock-gradient), url("../../../assets/images/ScreenMobile.png");
   background-size: cover;
   background-position: center;
   padding: 120px 30px 40px;
@@ -903,7 +903,7 @@ nav {
 
 @media (min-width: 768px) {
   .Mashrooms {
-    background: var(--clock-gradient), url("../../assets/images/ScreenTablet.png");
+    background: var(--clock-gradient), url("../../../assets/images/ScreenTablet.png");
     background-size: cover;
     background-position: center;
     padding: 360px 82px 60px;
@@ -933,7 +933,7 @@ nav {
 }
 @media (min-width: 1280px) {
   .Mashrooms {
-    background: var(--clock-gradient), url("../../assets/images/ScreenDesktop.png");
+    background: var(--clock-gradient), url("../../../assets/images/ScreenDesktop.png");
     background-size: cover;
     background-position: center;
     padding: 360px 115px 60px;
@@ -1015,11 +1015,6 @@ nav {
     background-color: var(--bcSecondary);
   }
 }
-iframe {
-  width: 100%;
-  border-radius: var(--borRad);
-}
-
 .JoinBox {
   display: -webkit-box;
   display: -ms-flexbox;

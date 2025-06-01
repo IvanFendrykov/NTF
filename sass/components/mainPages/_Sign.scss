@@ -3,7 +3,7 @@
   padding: 30px;
 }
 .Images {
-  background-image: url("./././assets/images/SingInMobile.png");
+  background-image: url("../../../assets/images/SingInMobile.png");
   min-height: 250px;
   width: 100%;
   background-clip: border-box;
@@ -58,14 +58,14 @@
     padding: 50px 50px 50px 0px;
   }
   .Images {
-    background-image: url("./././assets/images/SignInTab.png");
+    background-image: url("../../../assets/images/SignInTab.png");
     background-repeat: no-repeat;
     width: 50%;
   }
 }
 @media (min-width: 1280px) {
   .Images {
-    background: url("./././assets/images/SingIn.png");
+    background: url("../../../assets/images/SingIn.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
