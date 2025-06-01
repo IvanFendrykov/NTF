@@ -828,7 +828,7 @@ nav {
   }
 }
 .Mashrooms {
-  background: var(--clock-gradient), url("../../../assets/images/ScreenMobile.png");
+  background: var(--clock-gradient), url("/NTF/assets/images/ScreenMobile.png");
   background-size: cover;
   background-position: center;
   padding: 120px 30px 40px;
@@ -903,7 +903,7 @@ nav {
 
 @media (min-width: 768px) {
   .Mashrooms {
-    background: var(--clock-gradient), url("../../../assets/images/ScreenTablet.png");
+    background: var(--clock-gradient), url("/NTF/assets/images/ScreenTablet.png");
     background-size: cover;
     background-position: center;
     padding: 360px 82px 60px;
@@ -933,7 +933,7 @@ nav {
 }
 @media (min-width: 1280px) {
   .Mashrooms {
-    background: var(--clock-gradient), url("../../../assets/images/ScreenDesktop.png");
+    background: var(--clock-gradient), url("/NTF/assets/images/ScreenDesktop.png");
     background-size: cover;
     background-position: center;
     padding: 360px 115px 60px;
@@ -1184,7 +1184,7 @@ nav {
 }
 
 .Images {
-  background-image: url("../../../assets/images/SingInMobile.png");
+  background-image: url("/NTF/assets/images/SingInMobile.png");
   min-height: 250px;
   width: 100%;
   background-clip: border-box;
@@ -1253,14 +1253,14 @@ nav {
     padding: 50px 50px 50px 0px;
   }
   .Images {
-    background-image: url("../../../assets/images/SignInTab.png");
+    background-image: url("/NTF/assets/images/SignInTab.png");
     background-repeat: no-repeat;
     width: 50%;
   }
 }
 @media (min-width: 1280px) {
   .Images {
-    background: url("../../../assets/images/SingIn.png");
+    background: url("/NTF/assets/images/SingIn.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
