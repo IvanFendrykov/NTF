@@ -1,5 +1,6 @@
 .Mashrooms {
-  background: var(--clock-gradient), url("./assets/images/ScreenMobile.png");
+  background: var(--clock-gradient),
+    url("../../../assets/images/ScreenMobile.png");
   background-size: cover;
   background-position: center;
   padding: 120px 30px 40px;
@@ -62,7 +63,8 @@
 }
 @media (min-width: 768px) {
   .Mashrooms {
-    background: var(--clock-gradient), url("././assets/images/ScreenTablet.png");
+    background: var(--clock-gradient),
+      url("../../../assets/images/ScreenTablet.png");
     background-size: cover;
     background-position: center;
     padding: 360px 82px 60px;
@@ -83,7 +85,7 @@
 @media (min-width: 1280px) {
   .Mashrooms {
     background: var(--clock-gradient),
-      url("././assets/images/ScreenDesktop.png");
+      url("../../../assets/images/ScreenDesktop.png");
     background-size: cover;
     background-position: center;
     padding: 360px 115px 60px;
